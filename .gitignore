@@ -1,4 +1,6 @@
-node_modules
-.DS_Store
+*.css
 *.log
 *.sublime*
+.DS_Store
+dist
+node_modules

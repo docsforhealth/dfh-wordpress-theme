@@ -3,22 +3,22 @@
     "version": "0.0.1",
     "license": "Apache-2.0",
     "scripts": {
-        "build:sass": "npx node-sass --include-path node_modules style.scss style.css",
+        "build:sass": "npx sass --quiet-deps --load-path=node_modules src:build",
         "build:js": "npx webpack --mode production",
-        "watch:sass": "npx concurrently \"npm:build:sass\" \"npm:build:sass -- --watch --recursive\"",
+        "watch:sass": "npx concurrently \"npm:build:sass\" \"npm:build:sass -- --watch\"",
         "watch:js": "npx webpack --mode development --watch",
         "build": "npx concurrently -n w: npm:build:*",
         "start": "npx concurrently -n w: npm:watch:*"
     },
     "devDependencies": {
-        "@babel/core": "^7.6.0",
-        "@babel/preset-env": "^7.6.0",
-        "babel-loader": "^8.0.6",
-        "concurrently": "^5.0.0",
-        "node-sass": "^4.12.0",
+        "@babel/core": "~7.16.0",
+        "@babel/preset-env": "~7.16.4",
+        "babel-loader": "~8.2.3",
+        "concurrently": "~6.4.0",
         "normalize.css": "^8.0.1",
+        "sass": "^1.43.5",
         "scut": "^1.4.0",
-        "webpack": "^4.39.3",
-        "webpack-cli": "^3.3.8"
+        "webpack": "~5.64.4",
+        "webpack-cli": "~4.9.1"
     }
 }
