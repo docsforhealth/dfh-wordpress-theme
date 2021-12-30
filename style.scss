@@ -2,7 +2,7 @@
 Theme Name: Docs for Health
 Author: Eric Bai
 Author URI: https://github.com/ericbai
-GitHub Theme URI: https://github.com/ericbai/dfh-wordpress-theme
+GitHub Theme URI: https://github.com/docsforhealth/dfh-wordpress-theme
 Release Asset: true
 Description: Theme for the Docs for Health website
 Version: 0.0.13
@@ -11,11 +11,20 @@ License URI: https://www.apache.org/licenses/LICENSE-2.0.txt
 Text Domain: dfh
 */
 
+// Third party libraries
+// ---------------------
+
 @import 'normalize.css/normalize';
 @import 'scut/dist/scut';
 
+// Base styles
+// -----------
+
+$path-base-styles: 'src/scss/base';
+
 @import 'src/scss/base/vars';
 @import 'src/scss/base/overrides';
+@import 'src/scss/base/animations';
 @import 'src/scss/base/mixins';
 
 @import 'src/scss/base/controls';
@@ -23,5 +32,8 @@ Text Domain: dfh
 @import 'src/scss/base/structure';
 @import 'src/scss/base/typography';
 @import 'src/scss/base/utils';
+
+// Theme-specific styles
+// ---------------------
 
 @import 'src/scss/custom-colors';
