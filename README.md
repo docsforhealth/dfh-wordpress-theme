@@ -1,6 +1,6 @@
 # Docs for Health WordPress Theme
 
-[![Build Status](https://app.travis-ci.com/docsforhealth/dfh-wordpress-theme.svg?branch=master)](https://app.travis-ci.com/docsforhealth/dfh-wordpress-theme)
+[![Build Status](https://app.travis-ci.com/docsforhealth/dfh-wordpress-theme.svg)](https://app.travis-ci.com/docsforhealth/dfh-wordpress-theme)
 
 ## Commands
 
