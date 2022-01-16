@@ -1,6 +1,6 @@
 {
   "name": "docs-for-health-wordpress-theme",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "license": "Apache-2.0",
   "scripts": {
     "build:sass": "npx sass --quiet-deps --load-path=node_modules style.scss:style.css",
@@ -17,7 +17,7 @@
     "concurrently": "~6.4.0",
     "normalize.css": "^8.0.1",
     "sass": "^1.43.5",
-    "scut": "^1.4.0",
+    "scut": "^1.4.1",
     "webpack": "~5.64.4",
     "webpack-cli": "~4.9.1"
   }
