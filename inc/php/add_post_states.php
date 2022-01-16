@@ -19,5 +19,12 @@ function dfh_post_states($states, $post) {
         $post->ID == $toolkit_overview_page_id) {
         $states[] = __('Toolkit Overview Page', DFH_TEXT_DOMAIN);
     }
+    // Badge for dot phrase overview page
+    $dot_phrase_overview_page_id = get_theme_mod(DFH_THEME_MOD_DOT_PHRASE_OVERVIEW_LOCATION);
+    if ($dot_phrase_overview_page_id &&
+        $post->post_type == 'page' &&
+        $post->ID == $dot_phrase_overview_page_id) {
+        $states[] = __('Dot Phrase Overview Page', DFH_TEXT_DOMAIN);
+    }
     return $states;
 }

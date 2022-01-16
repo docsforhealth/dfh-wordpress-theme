@@ -50,6 +50,18 @@ function dfh_theme_customizer_settings($wp_customize) {
         'allow_addition' => true,
     ));
 
+    // Allow specifying which page is the Dot Phrase Overview page so that our toolkit detail
+    // know how to get back to the overview page without having the user specify each time
+    // see https://developer.wordpress.org/reference/classes/wp_customize_manager/add_setting/
+    $wp_customize->add_setting(DFH_THEME_MOD_DOT_PHRASE_OVERVIEW_LOCATION, array());
+    $wp_customize->add_control('dfh_dot_phrase_overview_location', array(
+        'section'        => $section_page_locations,
+        'setting'        => DFH_THEME_MOD_DOT_PHRASE_OVERVIEW_LOCATION,
+        'label'          => __('Dot phrase overview page', DFH_TEXT_DOMAIN),
+        'type'           => 'dropdown-pages',
+        'allow_addition' => true,
+    ));
+
     // Add a section to manage footer content
     // see https://developer.wordpress.org/reference/classes/wp_customize_manager/add_section/
     $wp_customize->add_section($section_footer, array(
