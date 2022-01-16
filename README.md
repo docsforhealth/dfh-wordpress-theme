@@ -24,7 +24,8 @@
 2. For completeness, also update the `version` field in `package.json` to the same version you entered in the prior step
 3. Commit changes with `git commit -am <message here>`
 4. Create [an annotated tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging) to mark the release with `git tag -a <tag version> -m <release message>`. Note that we use [annotated tags instead of lightweight tags](https://stackoverflow.com/a/25996877) as these are intended for release. 
-5. Push new commit and tag to remote origin with `git push --tags`. Travis CI will detect the new tag and launch into the build and release process as specified in `.travis.yml`
+5. Push new commit to remote origin with `git push`
+6. Push new tag to remote origin with `git push --tags`. Travis CI will detect the new tag and launch into the build and release process as specified in `.travis.yml`
 
 ### Tips
 
