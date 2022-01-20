@@ -21,17 +21,7 @@ Text Domain: dfh
 // -----------
 
 $path-base-styles: 'src/scss/base';
-
-@import 'src/scss/base/vars';
-@import 'src/scss/base/overrides';
-@import 'src/scss/base/animations';
-@import 'src/scss/base/mixins';
-
-@import 'src/scss/base/controls';
-@import 'src/scss/base/elements';
-@import 'src/scss/base/structure';
-@import 'src/scss/base/typography';
-@import 'src/scss/base/utils';
+@import 'src/scss/base/import';
 
 // Theme-specific styles
 // ---------------------
