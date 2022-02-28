@@ -16,7 +16,7 @@
         <nav class="nav">
             <div class="nav__contents">
                 <div class="nav__logo-container">
-                    <?php get_template_part("inc/php/partials/home-link") ?>
+                    <?php get_template_part("src/php/partials/home-link") ?>
                 </div>
                 <button type="button" class="nav__menu-toggle"></button>
             </div>
@@ -25,8 +25,10 @@
                 wp_nav_menu(array(
                     'theme_location' => DFH_MENU_HEADER,
                     'menu_class'     => 'nav__links',
-                    'container'      => '',
+                    'container'      => 'ul', // supports both `wp_nav_menu` and fallback `wp_page_menu`
                     'depth'          => 1,
+                    // fallback_cb default is `wp_page_menu`
+                    // see https://developer.wordpress.org/reference/functions/wp_nav_menu/
                 ));
                 ?>
             </div>

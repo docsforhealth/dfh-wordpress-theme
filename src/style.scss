@@ -20,10 +20,10 @@ Text Domain: dfh
 // Base styles
 // -----------
 
-$path-base-styles: 'src/scss/base';
-@import 'src/scss/base/import';
+$path-base-styles: 'scss/base';
+@import 'scss/base/import';
 
 // Theme-specific styles
 // ---------------------
 
-@import 'src/scss/custom-colors';
+@import 'scss/custom-colors';

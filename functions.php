@@ -37,11 +37,11 @@ if (!defined('DFH_THEME_MOD_FOOTER_CONTENT_DEFAULT')) {
 }
 
 // Theme files
-require_once get_template_directory() . '/inc/php/add_post_states.php';
-require_once get_template_directory() . '/inc/php/helpers.php';
-require_once get_template_directory() . '/inc/php/load_deps.php';
-require_once get_template_directory() . '/inc/php/setup_customizer.php';
-require_once get_template_directory() . '/inc/php/setup_theme.php';
+require_once get_template_directory() . '/src/php/add_post_states.php';
+require_once get_template_directory() . '/src/php/helpers.php';
+require_once get_template_directory() . '/src/php/load_deps.php';
+require_once get_template_directory() . '/src/php/setup_customizer.php';
+require_once get_template_directory() . '/src/php/setup_theme.php';
 
 // External dependencies for adding TinyMCE editor to customizer
-require_once get_template_directory() . '/inc/php/vendor/skyrocket_customizer.php';
+require_once get_template_directory() . '/src/php/vendor/skyrocket_customizer.php';

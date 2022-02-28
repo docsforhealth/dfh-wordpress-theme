@@ -1,8 +1,14 @@
 const path = require('path');
 
 module.exports = {
+  resolve: {
+    alias: {
+      assets: path.resolve(process.cwd(), 'assets'),
+      src: path.resolve(process.cwd(), 'src'),
+    },
+  },
   entry: {
-    main: './index.js',
+    theme: path.resolve(process.cwd(), 'src', 'theme.js'),
   },
   module: {
     rules: [
