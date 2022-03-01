@@ -20,7 +20,8 @@ Text Domain: dfh
 // Base styles
 // -----------
 
-$path-base-styles: 'scss/base';
+// path to base styles should be from BUILT LOCATION
+$path-base-styles: 'src/scss/base';
 @import 'scss/base/import';
 
 // Theme-specific styles

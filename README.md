@@ -18,6 +18,11 @@
 | `alm_templates/default.php` | Expected by the Ajax Load More plugin, this is the PHP file that is called for each item loaded via an AJAX request. Partial templates called by this file are located at `alm_templates/templates/` |
 | `functions.php` | Defines theme-specific constants and loads additional PHP classes that specify theme-specific customizations. Most PHP constants used in the theme are specified in the `docsforhealth.php` file in the corresponding DFH plugin |
 
+### Tips
+
+- Use `git pull && git submodule foreach git pull origin master` to [pull remote changes for the current repo and all submodules](https://stackoverflow.com/a/65130154)
+    + `yarn git:pull` available for convenience
+
 ## Deploying
 
 1. Update the `Version` field in the masthead of `src/style.scss` to your desired release version. **Be very careful to update the SCSS file *not* the CSS file.** Once more, **check that you have updated the SCSS file *not* the CSS file**. The CSS file is not version controlled!
