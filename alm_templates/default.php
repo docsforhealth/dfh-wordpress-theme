@@ -16,7 +16,7 @@ if (!function_exists('dfh_get_block') || !function_exists('dfh_pluralize')) {
     <?php
         $block = dfh_get_block(DFH_REQUIRED_BLOCK_RESOURCE, parse_blocks(get_the_content()));
         $metadata = $block ? $block['attrs'] : null;
-        if ($metadata):
+        if (is_array($metadata)):
             require get_template_directory() . '/alm_templates/templates/resource-preview.php';
         endif
     ?>
@@ -24,7 +24,7 @@ if (!function_exists('dfh_get_block') || !function_exists('dfh_pluralize')) {
     <?php
         $block = dfh_get_block(DFH_REQUIRED_BLOCK_TOOLKIT, parse_blocks(get_the_content()));
         $metadata = $block ? $block['attrs'] : null;
-        if ($metadata):
+        if (is_array($metadata)):
             require get_template_directory() . '/alm_templates/templates/toolkit-preview.php';
         endif
     ?>
@@ -32,7 +32,7 @@ if (!function_exists('dfh_get_block') || !function_exists('dfh_pluralize')) {
     <?php
         $block = dfh_get_block(DFH_REQUIRED_BLOCK_DOT_PHRASE, parse_blocks(get_the_content()));
         $metadata = $block ? $block['attrs'] : null;
-        if ($metadata):
+        if (is_array($metadata)):
             require get_template_directory() . '/alm_templates/templates/dot-phrase-preview.php';
         endif
     ?>
